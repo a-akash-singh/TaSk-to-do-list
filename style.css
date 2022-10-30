@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
+}
+body{
+    background-color:antiquewhite;
+}
+.container{
+    padding:1em;
+    display:grid;
+    gap:2em;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.to-do-task{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding:2em;
+    gap:1.5em;
+    background-image: linear-gradient(270deg,#9b4b90 0,#2c215d);
+}
+
+.input_todo {
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    gap:0.5em;
+}
+
+.input_todo input{
+    font-size: 22px;
+    padding:0.1em;
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#ebb8e2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+::placeholder {
+    color: gray;
+    padding:0.2em;
+  }
+
+.input_todo button{
+    padding:0.5em;
+    font-size: 18px;
+    opacity:0.2;
+}
+
+#bu_tton.active{
+    opacity:1;
+    background-color: green;
+}
+
+.list_display{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap:1em;
+   width:100%;
+   font-weight: 400;
+}
+
+.add_list.completed span{
+    text-decoration: line-through;
+    color:Red;
+}
+
+.list_display .add_list{
+    width:100%;
+    height:auto;
+    background-color:#5df5bdbb ;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-evenly;
+    align-items: center;
+    padding:1.2em;
+}
+
+.list_display .add_list .item_btn{
+    justify-self: end;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+}
+
+.item_btn .fa-trash{
+    color: rgb(182, 3, 3);
+}
+
+.item_btn .fa-check{
+    color: Blue;
+}
